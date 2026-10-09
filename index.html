@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>BooK Todo</title>
+</head>
+
+<body>
+    <h3 class="top-heading">Books Posts Management </h3>
+    <p class="text-center topHeading2">Add, Update and Delete Posts</p>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-2 offset-10"><button class="btn shadow bg-lite-pink" id="addBook"><b>Add Book</b></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-5" id="resultCardDRow">
+            <!-- <div class="col-3">
+                <div class="card circle result-card">
+                   <h3>Silent</h3>
+                    <div class="content">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at enim recusandae quae voluptate cupiditate error facilis incidunt amet veniam? Optio consequuntur corporis blanditiis nihil ducimus quaerat fuga minima dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias rem sequi voluptates ducimus facilis fugiat, magnam distinctio provident inventore fuga corrupti ipsam quasi. Aspernatur voluptates mollitia, recusandae atque sapiente debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, saepe eaque doloribus distinctio porro aut molestiae, quae, tempora harum ex deleniti numquam ut facere amet dignissimos illo minus! Porro, natus?</p>
+                    </div>
+                    <div class="d-flex justify-content-between p-2 buttons mt-2">
+                        <i id="editSubject" role="button" class="fa-solid fa-pen-nib text-primary"></i>
+                        <i id="deleteSubject" role="button" class="fa-solid fa-trash text-danger"></i>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="row">
+            <div class="col-6 offset-3 form d-none" id="form-show-hide">
+                <div class="card bg-dark-pink text-white">
+                    <div class="card-header">
+                        <h2 class="form-heading" id="form-heading"><b>Add Book</b></h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="form">
+                            <label for="bookName"><b>Name</b></label>
+                            <input class="form-control mb-4" type="text" id="bookName" placeholder="Book Name" required>
+
+                            <label for="description"><b>Description</b></label>
+                            <input class="form-control mb-4" type="text" id="description" placeholder="About book" required>
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <button id="addBtn" class="btn shadow bg-dark-pink text-white border"><b>Add
+                                            Book</b></button>
+                                    <button type="button" id="updateBtn"
+                                        class="d-none btn shadow bg-dark-pink text-white border"><b>Update</b></button>
+                                </div>
+                                <div>
+                                    <button type="button" id="closeBtn"
+                                        class="btn shadow bg-dark-pink text-white border"><b>Close</b></button>
+                                    <button type="button" id="cancelBtn"
+                                        class="btn shadow bg-dark-pink text-white border d-none"><b>cancel</b></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="spinner" class="d-none">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
